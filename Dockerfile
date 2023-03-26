@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY ./src ./src
 
 # set the secret key
-ENV SECRET_KEY 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
+ENV SECRET_KEY 
 
 # start the server
 CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
