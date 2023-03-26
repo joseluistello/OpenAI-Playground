@@ -20,7 +20,7 @@ def generate_response(prompt: Prompt):
     response = openai.Completion.create(
         engine=gpt3_model,
         prompt=prompt.text,
-        max_tokens = 3,
+        max_tokens = text_length,
         n=1,
         stop=None,
         temperature=0.5
